@@ -1,0 +1,7 @@
+#!/bin/bash
+#BSUB -q mpi
+#BSUB -o %J.out
+#BSUB -e %J.err
+#BSUB -n 24
+module load intel/2018u4
+mpirun -np 24 ./pihm
